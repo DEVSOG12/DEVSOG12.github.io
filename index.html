@@ -1,174 +1,137 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oreofe Solarin - Academic Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+    <title>Oreofe Solarin</title>
+     
+    <link rel='icon' href='favicon.ico' type='image/x-icon'/>
+
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
+        body, html {
+            height: 100%;
             margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
-            line-height: 1.6;
+            font-family: 'Space Mono', monospace ;
         }
-        header {
-            background-color: #0056b3;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
+
+        img.resize {
+            max-width: 30%;
+            max-height: 30%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
-        header h1 {
-            margin: 0;
+
+        h1.textFormat {
+            font-family: 'Space Mono', monospace;
+            font-size: xx-large;
         }
         
-        .container {
-            max-width: 900px;
-            margin: auto;
+        p.textFormat {
+            font-family: 'Space Mono', monospace;
+            font-size: medium;
+        }
+
+        a.textFormat {
+            font-family: 'Space Mono', monospace;
+            font-size: medium;
+        }
+
+        div.textDiv {
+            /* text-align: center; */
+            padding-top: 5%;
+            /* margin-left: 220px; */
+            font-family: 'Space Mono', monospace;
+        }
+
+        .typewriter-navigation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100vh;
+            background-color: #f8f9fa;
             padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .bgbase {
             background-color: white;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-            border-radius: 8px;
-        }
-        .nav {
-            background-color: #004080;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        .nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        .nav a:hover {
-            text-decoration: underline;
-        }                   
-        h2 {
-            color: #0056b3;
-            border-bottom: 2px solid #0056b3;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-        p, ul {
-            margin: 10px 0;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        a {
-            color: #0056b3;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        .profile-pic-container {
-            display: flex;
-            justify-content: left;
-            margin-bottom: 20px;
-        }
-        .profile-pic {
-            border: 5px solid #3DDBC6;
-            width: 300px;
-            height: auto;
+
+            /* Full height */
+            height: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     </style>
 </head>
 <body>
+<div class="container">
+ 
+<div class="textDiv">
+    <p class="textFormat">I'm Oreofe Solarin.</p>
 
-    <header>
-        <h1>Oreofe Solarin</h1>
-        <p>Applied Mathematics & Computer Science | Undergraduate Researcher | Teaching Assistant</p>
-    </header>
+    <p class="textFormat">
+        I'm an undergraduate student at 
+        <a class="textFormat" href="https://case.edu/">CWRU</a>, 
+        where I'll finish a B.Sc. in Computer Science and a B.Sc. in Applied Mathematics in May 2026.
+    </p>
 
-    <nav class="nav">
-        <a href="#about">About Me</a>
-        <!-- <a href="#contact">Contact Information</a> -->
-        <!-- <a href="#education">Education</a> -->
-        <a href="#positions">Current Positions</a>
-        <!-- <a href="#experience">Experience</a> -->
-        <!-- <a href="#skills">Technical Skills</a> -->
-        <!-- <a href="#publications">Publications</a> -->
-        <!-- <a href="#activities">Extracurricular Activities</a> -->
-        <a href="oreofe-cv.pdf" target="_blank">View CV</a> <!-- Replace 'path-to-your-cv.pdf' with the actual path to your CV file -->
-    </nav>
+    <p class="textFormat">
+        I'm broadly interested in Software Engineering Research; Software Security specifically in Software Supply Chain Security; and how they all tie back to 
+        developers and their workflows. I'm occasionally interested in usable security and privacy (HCI + Security).
+    </p>
 
-    <div class="container">
-        <!-- Profile Picture Section -->
-        <div class="profile-pic-container">
-            <img src="oreofe.jpeg" alt="Oreofe Solarin's Profile Picture" class="profile-pic"> <!-- Replace 'your-picture.jpg' with the path to your profile picture -->
-        </div>
+    <p class="textFormat">
+        I'm currently working as a researcher on the 
+        <a class="textFormat" href="https://mds3-coe.com/">MDS3</a> project under the 
+        <a class="textFormat" href="https://engineering.case.edu/centers/sdle">SDLE Research Center</a>. 
+        My work applies computational and mathematical methods to analyze X-ray diffraction (XRD) data, 
+        mainly around uncertainty quantification and domain-shift analysis. Materials science isn't my core focus, 
+        but I enjoy working on interdisciplinary problems (especially when they allow me to use my math knowledge 🤓).
+    </p>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome! I'm Oreofe, a dedicated junior majoring in Applied Mathematics and Computer Science at Case Western Reserve University with a minor in Artificial Intelligence. My interests span software development, machine learning, and building scalable systems with an emphasis on secure coding practices. I thrive on tackling complex problems, collaborating with diverse teams, and driving impactful research. As an undergraduate researcher with SDLE and a Teaching Assistant for Intro to Java, I continuously push the boundaries of what technology can achieve, while also mentoring the next generation of aspiring developers. Outside of academics, I channel my passion for endurance into competitive cycling, blending precision and persistence in everything I pursue.</p>
-        </section>
+    <p class="textFormat">
+        In the Summer of 2023, I interned as a Software Engineering Research Intern at Carnegie Mellon University's 
+        <a class="textFormat" href="https://www.cmu.edu/scs/s3d/reuse/">REUSE program</a> under 
+        <a class="textFormat" href="https://www.cs.cmu.edu/~ckaestne/"> Dr. Christian Kästner</a> working on 
+        reproducible builds in the bubble of software supply chain security. Our work was published in 
+        <a class="textFormat" href="http://ieeexplore.ieee.org/document/11029905">ICSE 2025</a>.
+    </p>
 
-        <section>
-            <h2>Contact Information</h2>
-            <p>Email: ons8 at case dot edu</p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/oreofe-solarin">linkedin.com/in/oreofe-solarin</a></p>
-            <p>GitHub: <a href="https://github.com/devsog12">github.com/devsog12</a></p>
-        </section>
+    <p class="textFormat">
+        In the Summer of 2024, I interned again as a Software Engineering Research Intern at Carnegie Mellon University's 
+        <a class="textFormat" href="https://www.cmu.edu/scs/s3d/reuse/">REUSE program</a> under 
+        <a class="textFormat" href="https://www.andrew.cmu.edu/user/liminjia/"> Dr. Limin Jia</a> working still within the 
+        security space on Information Flow Control (IFC). 
+    </p>
+    
+    <p class="textFormat">
+        Publications and preprints ==>
+        <a href="https://scholar.google.com/citations?user=0ASIGwQAAAAJ&hl=en" target="_blank">
+            <img src="Google_Scholar_logo.svg" alt="Google Scholar" style="height: 1em; vertical-align: middle;">
+        </a>
+    </p>
 
-        <section>
-            <h2>Education</h2>
-            <p><strong>Case Western Reserve University</strong> - B.S. Applied Mathematics & Computer Science (AI minor)</p>
-            <p><strong>College of Wooster</strong> - Transferred, GPA: 3.8</p>
-        </section>
+    <p class="textFormat">
+        Outside of research, I'm an amateur road/gravel cyclist (sometimes competitive). I race road events as a 
+        <a class="textFormat" href="https://www.road-results.com/racer/324505" target="_blank">Category 4 rider</a>.
+    </p>
+</div>
 
-        <section id="positions">
-            <h2>Current Positions</h2>
-            <p>2024 - Undergraduate Researcher at SDLE, Case Western</p>
-            <p>Fall 2024 - Teaching Assistant for CSDS 132: Intro to Java</p>
-        </section>
-
-        <section>
-            <h2>Experience</h2>
-            <ul>
-                <li>2024 - Undergraduate Research Fellow at Carnegie Mellon University - Research in Information Flow Security</li>
-                <li>2023/2024 - Software Engineer at Gameplay (Remote) - Developed mobile applications with Flutter & Dart</li>
-                <li>2023/2024 - Undergraduate Research Fellow at Carnegie Mellon University - Research in Open-Source supply chain Security</li>
-                <li>2023 - Undergraduate Research Assistant at the College of Wooster  - Research in Graph Theory</li>
-                <li>2022 - Undergraduate Research Assistant at the College of Wooster  - Research in Graph Theory</li>
-
-            </ul>
-        </section>
-
-        <section>
-            <h2>Technical Skills</h2>
-            <p>Python, C++, Dart, Java, JavaScript, TypeScript, MATLAB, Django, Flutter, TensorFlow, Docker, Git</p>
-        </section>
-
-        <section id="publications">
-            <h2>Publications</h2>
-            <ul>
-                <li>An Empirical Study on Reproducible Packaging in Open-Source Ecosystems - ICSE 2025</li>
-                <li>Proving Security Properties via Preservation - TBD</li>
-            </ul>
-        </section>
-
-        <section id="activities">
-            <h2>Extracurricular Activities</h2>
-            <p>Risk Manager, CWRU Cycling Club - Responsible for risk assessments in club competitions and practices.</p>
-            <p>Passionate Cyclist - Enjoys cycling and racing, and a follower of races like the Tour de France and Giro d'Italia.</p>
-            <p>Member of NSBE and NSA</p>
-            <p>Open Source Maintainer on <a href="https://github.com/devsog12">GitHub</a>, <a href="https://pub.dev/publishers/techbuzs.ml/packages">Pub.Dev</a>, <a href="https://www.npmjs.com/~devsog12">NPMJS</a></p>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Oreofe Solarin | All Rights Reserved</p>
-    </footer>
-
+</div>
 </body>
 </html>
